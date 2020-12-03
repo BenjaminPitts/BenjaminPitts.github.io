@@ -1,0 +1,27 @@
+body {
+  background: gray;
+  
+}
+.output {
+  border: 1px solid gold;
+  width: 60%;
+  height: auto;
+}
+.punchline {
+  border: 1px solid gold;
+  width: 60%;
+  height: auto;
+  animation-name: fade-in;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+}
+
+
+
+@keyframes fade-in {
+  0% {background: gray}
+  25% {background:gray}
+  50% {background:gray}
+  75% {background: orange}
+  100% {background: orange}
+}
