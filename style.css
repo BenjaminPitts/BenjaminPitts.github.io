@@ -2,6 +2,7 @@
 body {
   background: gray;
   font-family: 'Luckiest Guy', sans-serif;
+
   /* animation-name: fade-in;
   animation-duration: 2s;
   animation-iteration-count: 1; */
@@ -13,53 +14,63 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* width: 90%;
-  height: auto; */
   border: 1px solid gold;
 }
 
-.buttons, .selector {
+.buttons, .selector, .output2, form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* width: 80%; */
-  border: 1px solid gold;
 }
-button {
+button, input {
   border-radius: 8%;
-  padding: .5em;
-  margin: .7em;
+  padding: .4em;
+  margin: .4em;
   background: ivory;
 }
+button:hover {
+  cursor: pointer;
+  background: gold;
+}
+h1 {
+  padding: 0;
+  margin: .5em 0 0 0;
+}
 h3 {
-  margin: 1em;
+  padding: 0;
+  margin: .3em;
 }
 h4 {
+  padding: .2em;
   margin: 0;
 }
-.output {
+h5 {
+  padding: 0;
+  margin: 0 0 0 1em;
+}
+.output, .output2, .weather {
   display: flex;
-  /* width: 60%; */
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border: 1px solid gold;
+  text-align: center;
+  padding: 0;
+  margin: .5em;
 }
 
 .dad-carousel {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid gold;
   padding: 10px;
 }
 .dad-carousel img {
-  width: 50%;
+  width: 40%;
   border-radius: 10px;
   display: none;
 }
@@ -76,7 +87,7 @@ h4 {
 
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:1080px) {
   body, .header, .buttons, .selector {
     background-color: #090909;
     color: ivory;
