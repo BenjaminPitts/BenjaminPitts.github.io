@@ -24,6 +24,8 @@ $(() => {
   }
   $('.dad-carousel').children().eq(currentImg).css('display','block');
   })
+//tooltip
+
 
 //api and joke delivery
 
@@ -38,15 +40,15 @@ $(() => {
   }).then(
     (data)=> {
       const $setup = $('<h2>').text(data.setup)
-      const $delivery = $('<h3>').text(data.delivery)
+      const $delivery = $('<h3>').text(data.delivery).css('color', 'orange')
       $('.output').append($setup)
       setTimeout(
         ()=>{
           $('.output').append($delivery)
         },
-        2000
+        3000
       )
-      console.log(data)
+      //console.log(data)
     },
 
     (error)=>{
