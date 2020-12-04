@@ -1,27 +1,73 @@
+
 body {
   background: gray;
-  
+  font-family: 'Luckiest Guy', sans-serif;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid gold;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.buttons, .selector {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gold;
+}
+button {
+  border-radius: 8%;
+  padding: .5em;
+  margin: .7em;
+  background: ivory;
 }
 .output {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   border: 1px solid gold;
-  width: 60%;
-  height: auto;
 }
-.punchline {
+
+.dad-carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   border: 1px solid gold;
-  width: 60%;
-  height: auto;
-  animation-name: fade-in;
-  animation-duration: 6s;
-  animation-iteration-count: 1;
+  padding: 10px;
+}
+.dad-carousel img {
+  width: 50%;
+  border-radius: 10px;
+  display: none;
 }
 
 
 
 @keyframes fade-in {
-  0% {background: gray}
-  25% {background:gray}
-  50% {background:gray}
-  75% {background: orange}
-  100% {background: orange}
+  0% {background: orange}
+  25% {background:orange}
+  50% {background:orange}
+  75% {background: gray}
+  100% {background: gray}
+}
+
+
+
+@media screen and (max-width:600px) {
+  body{
+    background-color: #090909;
+    color: ivory;
+  }
 }
