@@ -4,7 +4,9 @@ $(() => {
   let images = $('.dad-carousel').children().length -1;
 
   $('.next').on('click', () => {
+    $('.output').empty();
     $('.output2').empty();
+    $('.output3').empty();
 
   $('.dad-carousel').children().eq(currentImg).css('display','none');
   if (currentImg < images) {
@@ -17,6 +19,9 @@ $(() => {
   });
 
   $('.previous').on('click', ()=>{
+    $('.output').empty();
+    $('.output2').empty();
+    $('.output3').empty();
   $('.dad-carousel').children().eq(currentImg).css('display','none');
   if(currentImg > 0) {
     currentImg--;
@@ -37,6 +42,7 @@ $(document).on('hover', () => {
     //event.preventDefault();
     $('.output').empty();
     $('.output2').empty();
+    $('.output3').empty();
 
     let $joke = $(event.target).attr('id');
 
@@ -68,6 +74,7 @@ $('form').on('submit', (event)=> {
   event.preventDefault();
   $('.output').empty();
   $('.output2').empty();
+  $('.output3').empty();
 
   let $city = $('input[type="text"]').val();
 
@@ -84,7 +91,7 @@ $('form').on('submit', (event)=> {
       console.log(data)
 
       //phrases
-      const phrases = ['Dad says: dont touch that thermostat, put on a sweater!','Dad says: great day for some yardwork!','Dad says: its not the heat that gets you, its the humidity!']
+      const phrases = ['"Don\'t touch that thermostat, put on a sweater!"','"Great day for some yardwork! Might fire up the grill later..."','"It\'s not the heat that gets you, its the humidity!"']
 
       if (data.main.temp <= 50) {
         $('.output3').text(phrases[0]).css('color','gold')
