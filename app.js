@@ -82,6 +82,18 @@ $('form').on('submit', (event)=> {
       $('.output2').append($city).append($temp).append($description).append($wind).append($humidity)
       $('.form').trigger('reset');
       console.log(data)
+
+      //phrases
+      const phrases = ['Dad says: dont touch that thermostat, put on a sweater!','Dad says: great day for some yardwork!','Dad says: its not the heat that gets you, its the humidity!']
+
+      if (data.main.temp <= 50) {
+        $('.output3').text(phrases[0]).css('color','gold')
+      } else if (data.main.temp <= 75){
+        $('.output3').text(phrases[1]).css('color','gold')
+      } else {
+        $('.output3').text(phrases[2]).css('color','gold')
+      }
+
     },
     ()=>{
       //console.log('error')
