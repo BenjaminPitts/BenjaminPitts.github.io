@@ -2,6 +2,7 @@ $(() => {
 //carousel
   let currentImg = 0;
   let images = $('.dad-carousel').children().length -1;
+  const names = ['Alan','Steve','Dave']
 
   $('.next').on('click', () => {
     $('.output').empty();
@@ -11,11 +12,13 @@ $(() => {
   $('.dad-carousel').children().eq(currentImg).css('display','none');
   if (currentImg < images) {
     currentImg++;
+
   }
   else {
     currentImg = 0;
   }
-  $('.dad-carousel').children().eq(currentImg).css('display','block');
+  $('.dad-carousel').children().eq(currentImg).css('display','block')
+  
   });
 
   $('.previous').on('click', ()=>{

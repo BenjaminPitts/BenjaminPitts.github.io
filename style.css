@@ -63,7 +63,7 @@ h5 {
 
 .dad-carousel {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
