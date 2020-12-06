@@ -72,7 +72,7 @@ $('.setJoke').on('click', (event) => {
   localStorage.setItem('setup', data.setup)
   localStorage.setItem('delivery', data.delivery)
   let goToJoke = localStorage.getItem('goToJoke')
-  $('.goto').append(`Go-To Joke: ${data.setup}`).append(`:: ${data.delivery}`).css('font-style','italic')
+  $('.goto').append(`Go-To Joke: ${data.setup}`).append(`---${data.delivery}`).css('font-style','italic')
   localStorage.removeItem('goToJoke')
 })
 
