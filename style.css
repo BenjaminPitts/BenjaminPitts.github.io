@@ -50,7 +50,7 @@ h5 {
   padding: 0;
   margin: 0 0 0 1em;
 }
-.output, .output2, .output3, .weather {
+.output, .goto, .output2, .output3, .weather {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

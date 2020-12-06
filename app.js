@@ -12,13 +12,12 @@ $(() => {
   $('.dad-carousel').children().eq(currentImg).css('display','none');
   if (currentImg < images) {
     currentImg++;
-
   }
   else {
     currentImg = 0;
   }
   $('.dad-carousel').children().eq(currentImg).css('display','block')
-  
+
   });
 
   $('.previous').on('click', ()=>{
@@ -61,17 +60,30 @@ $(document).on('hover', () => {
         ()=>{
           $('.output').append($delivery)
         },
-        4000
+        1000
       )
-      //console.log(data)
+//create go-to button
+  $('<button>').addClass('setJoke').text('Set As \'Go-To\' Joke').prependTo('.output')
+
+//set go-to joke within 1st click event
+$('.setJoke').on('click', (event) => {
+  $('.goto').empty();
+  event.preventDefault;
+  localStorage.setItem('setup', data.setup)
+  localStorage.setItem('delivery', data.delivery)
+  let goToJoke = localStorage.getItem('goToJoke')
+  $('.goto').append(`Go-To Joke: ${data.setup}`).append(`:: ${data.delivery}`).css('font-style','italic')
+  localStorage.removeItem('goToJoke')
+})
+
     },
 
-    (error)=>{
-      //console.log('error!!!')
-
+    (error)=> {
       }
      )
    })
+
+
 //weather app
 $('form').on('submit', (event)=> {
   event.preventDefault();
