@@ -3,7 +3,6 @@
   border: 1px solid gold;
 } */
 
-
 .header {
   display: flex;
   flex-direction: column;
@@ -21,7 +20,7 @@
   align-items: center;
 }
 button, input {
-  border-radius: 8%;
+  font-size: 20px;
   padding: .4em;
   margin: .4em;
   background: ivory;
@@ -63,12 +62,12 @@ h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 10px;
 }
 .dad-carousel img {
-  width: 40%;
+  width: 35%;
   border-radius: 10px;
+  border: 1px solid gold;
   display: none;
 }
 
@@ -78,11 +77,14 @@ body, .header, .buttons, .selector {
   color: ivory;
   font-family: 'Luckiest Guy', sans-serif;
 }
-
+.goToJoke {
+  font-size: 12px;
+}
 @media (max-width: 550px) {
 button {
-  display: flex;
-  font-size: 18px;
-  max-width: 80%;
+  font-size: 20px;
   }
+h4, h5 {
+  font-size: 30px;
+}
 }

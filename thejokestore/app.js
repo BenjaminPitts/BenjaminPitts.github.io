@@ -64,7 +64,7 @@ $(document).on('hover', () => {
         3000
       )
       //create 'go-to' button
-  $('<button>').addClass('setJoke').text('Set As \'Go-To\' Joke').prependTo('.output')
+  $('<button>').addClass('setJoke').text('Set As \'Go-To\' Joke').prependTo('.output').css('font-size','12px')
 
 //save 'go-to' joke to local storage with a click event
 $('.setJoke').on('click', (event) => {
