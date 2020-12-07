@@ -1,1 +1,3 @@
-This is my personal portfolio to showcase projects that I made using HTML, CSS, JavaScript, and jQuerey.
+This is my personal portfolio to showcase applications that I made using HTML, CSS, JavaScript, and jQuery. Below are links to these projects:
+
+https://benjaminpitts.github.io/thejokestore/
