@@ -60,7 +60,7 @@ $(document).on('hover', () => {
         ()=>{
           $('.output').append($delivery)
         },
-        1000
+        4000
       )
 // //create go-to button
   $('<button>').addClass('setJoke').text('Set As \'Go-To\' Joke').prependTo('.output')
@@ -74,19 +74,24 @@ $('.setJoke').on('click', (event) => {
   let delivery = localStorage.getItem('delivery')
 
   //$('.goto').append(`Go-To Joke: ${data.setup}`).append(`---${data.delivery}`).css('font-style','italic')
-$('.goto').html(`Go-To Joke:${setup + delivery}`)
-
-  //localStorage.removeItem('goToJoke')
-
+$('.goto').append(`Go-To Joke:${setup + delivery}`).css('color','gold')
 })
-
     },
-
     (error)=> {
       }
      )
    })
 
+   //retrieve go-to joke
+   $('.goToJoke').on('click', (event) => {
+     event.preventDefault()
+     // localStorage.setItem('setup', data.setup)
+     // localStorage.setItem('delivery', data.delivery)
+     let setup = localStorage.getItem('setup')
+     let delivery = localStorage.getItem('delivery')
+     $('.goto').append(`Go-To Joke: ${setup}---${delivery}`).css('color','gold')
+     $('.goToJoke').hide()
+   })
 
 //weather app
 $('form').on('submit', (event)=> {

@@ -1,12 +1,8 @@
 
-body {
-  background: gray;
-  font-family: 'Luckiest Guy', sans-serif;
+/* * {
+  border: 1px solid gold;
+} */
 
-  /* animation-name: fade-in;
-  animation-duration: 2s;
-  animation-iteration-count: 1; */
-}
 
 .header {
   display: flex;
@@ -33,6 +29,7 @@ button, input {
 button:hover {
   cursor: pointer;
   background: gold;
+  transition: .7s;
 }
 h1 {
   padding: 0;
@@ -76,20 +73,15 @@ h5 {
 }
 
 
-
-@keyframes fade-in {
-  0% {background: orange}
-  25% {background:orange}
-  50% {background:orange}
-  75% {background: gray}
-  100% {background: gray}
+body, .header, .buttons, .selector {
+  background-color: #090909;
+  color: ivory;
+  font-family: 'Luckiest Guy', sans-serif;
 }
 
-
-
-@media screen and (max-width:1080px) {
-  body, .header, .buttons, .selector {
-    background-color: #090909;
-    color: ivory;
+@media (max-width:500px) {
+button {
+  display: flex;
+  font-size: 18px;
+}
   }
-}
