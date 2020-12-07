@@ -79,9 +79,10 @@ body, .header, .buttons, .selector {
   font-family: 'Luckiest Guy', sans-serif;
 }
 
-@media (max-width:500px) {
+@media (max-width: 550px) {
 button {
   display: flex;
   font-size: 18px;
+  max-width: 80%;
   }
 }

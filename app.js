@@ -1,10 +1,9 @@
 $(() => {
-//dad-carousel
+//carousel
   let currentImg = 0;
   let images = $('.dad-carousel').children().length -1;
   const names = ['Alan','Steve','Dave']
 
-//next dad click event
   $('.next').on('click', () => {
     $('.output').empty();
     $('.output2').empty();
@@ -20,7 +19,7 @@ $(() => {
   $('.dad-carousel').children().eq(currentImg).css('display','block')
 
   });
-//previous dad click event
+
   $('.previous').on('click', ()=>{
     $('.output').empty();
     $('.output2').empty();
@@ -35,13 +34,14 @@ $(() => {
   $('.dad-carousel').children().eq(currentImg).css('display','block');
   })
 
-//tooltips
+//tooltip
 $(document).on('hover', () => {
   $('[data-toggle=tooltip]').tooltip();
 });
 
 //api and joke delivery
   $('.buttons').on('click', (event) => {
+    //event.preventDefault();
     $('.output').empty();
     $('.output2').empty();
     $('.output3').empty();
@@ -56,26 +56,25 @@ $(document).on('hover', () => {
       const $setup = $('<h3>').text(data.setup)
       const $delivery = $('<h3>').text(data.delivery).css('color', 'gold')
       $('.output').append($setup)
-      //punchilne timer
       setTimeout(
         ()=>{
           $('.output').append($delivery)
         },
-        3000
+        3500
       )
-      //create 'go-to' button
+// //create go-to button
   $('<button>').addClass('setJoke').text('Set As \'Go-To\' Joke').prependTo('.output')
 
-//save 'go-to' joke to local storage with a click event
+//set go-to joke within 1st click event
 $('.setJoke').on('click', (event) => {
   $('.goto').empty();
   localStorage.setItem('setup', data.setup)
   localStorage.setItem('delivery', data.delivery)
-  let $setup = localStorage.getItem('setup')
-  let $delivery = localStorage.getItem('delivery')
-//display 'go-to' joke
-$('.goto').append(`Go-To Joke:${$setup}---${$delivery}`)
-.css('color','gold').css('font-style','italic')
+  let setup = localStorage.getItem('setup')
+  let delivery = localStorage.getItem('delivery')
+
+  //$('.goto').append(`Go-To Joke: ${data.setup}`).append(`---${data.delivery}`).css('font-style','italic')
+$('.goto').append(`Go-To Joke:${setup}---${delivery}`).css('color','gold')
 })
     },
     (error)=> {
@@ -83,12 +82,14 @@ $('.goto').append(`Go-To Joke:${$setup}---${$delivery}`)
      )
    })
 
-   //retrieve go-to joke from local storage with a click event
+   //retrieve go-to joke
    $('.goToJoke').on('click', (event) => {
      event.preventDefault()
-     let $setup = localStorage.getItem('setup')
-     let $delivery = localStorage.getItem('delivery')
-     $('.goto').append(`Go-To Joke: ${$setup}---${$delivery}`).css('color','gold')
+     // localStorage.setItem('setup', data.setup)
+     // localStorage.setItem('delivery', data.delivery)
+     let setup = localStorage.getItem('setup')
+     let delivery = localStorage.getItem('delivery')
+     $('.goto').append(`Go-To Joke: ${setup}---${delivery}`).css('color','gold')
      $('.goToJoke').hide()
    })
 
@@ -113,7 +114,7 @@ $('form').on('submit', (event)=> {
       $('.form').trigger('reset');
       console.log(data)
 
-      //dad-phrases
+      //phrases
       const phrases = ['"Don\'t touch that thermostat, put on a sweater!"','"Great day for some yardwork! Might fire up the grill later..."','"It\'s not the heat that gets you, its the humidity!"']
 
       if (data.main.temp <= 55) {
@@ -123,8 +124,10 @@ $('form').on('submit', (event)=> {
       } else {
         $('.output3').text(phrases[2]).css('color','gold')
       }
+
     },
-    (error)=>{
+    ()=>{
+      //console.log('error')
     }
   )
 
