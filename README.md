@@ -1,2 +1,0 @@
-# thejokestore
-project1
