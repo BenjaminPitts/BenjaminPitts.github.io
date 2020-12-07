@@ -60,7 +60,7 @@ $(document).on('hover', () => {
         ()=>{
           $('.output').append($delivery)
         },
-        4000
+        3500
       )
 // //create go-to button
   $('<button>').addClass('setJoke').text('Set As \'Go-To\' Joke').prependTo('.output')
@@ -74,7 +74,7 @@ $('.setJoke').on('click', (event) => {
   let delivery = localStorage.getItem('delivery')
 
   //$('.goto').append(`Go-To Joke: ${data.setup}`).append(`---${data.delivery}`).css('font-style','italic')
-$('.goto').append(`Go-To Joke:${setup + delivery}`).css('color','gold')
+$('.goto').append(`Go-To Joke:${setup}---${delivery}`).css('color','gold')
 })
     },
     (error)=> {
@@ -117,7 +117,7 @@ $('form').on('submit', (event)=> {
       //phrases
       const phrases = ['"Don\'t touch that thermostat, put on a sweater!"','"Great day for some yardwork! Might fire up the grill later..."','"It\'s not the heat that gets you, its the humidity!"']
 
-      if (data.main.temp <= 50) {
+      if (data.main.temp <= 55) {
         $('.output3').text(phrases[0]).css('color','gold')
       } else if (data.main.temp <= 75){
         $('.output3').text(phrases[1]).css('color','gold')
