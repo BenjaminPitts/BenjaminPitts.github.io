@@ -23,10 +23,10 @@
   align-items: center;
   text-align: center;
   width: 60px;
+  transform: rotate(30deg);
   animation-name: spin-emoji;
   animation-duration: 1.5s;
 }
-
 .buttons, .selector, .output2, .form {
   display: flex;
   flex-direction: row;
@@ -51,26 +51,26 @@ h1, h2 {
   margin: .5em 0 0 0;
 }
 h3 {
-  padding: 0;
-  margin: .3em;
+  padding: .3em;
+  margin: 0;
 }
 h4 {
-  padding: .2em;
-  margin: 0;
+  padding: 0;
+  margin: .1em;
 }
 h5 {
   padding: 0;
-  margin: 0 0 0 1em;
+  margin: 0 0 1em 0;
 }
-.output, .goto, .output2, .output3, .weather {
+.output, .goto, .output2, .output3 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0;
-  margin: .5em;
+  padding: .2em;
+  margin: .7em;
 }
 .dad-carousel {
   display: flex;
@@ -85,30 +85,30 @@ h5 {
   border: 1px solid gold;
   display: none;
 }
-
 body, .header, .buttons, .selector {
   background-color: #090909;
   color: ivory;
   font-family: 'Luckiest Guy', sans-serif;
 }
 .goToJoke, .setJoke {
-  font-size: 12px;
+  font-size: 14px;
+  margin: 1em;
 }
 
 
 @keyframes spin-emoji{
-100% {transform: rotate(3600deg)}
+100% {transform: rotate(3630deg)}
 }
 
 @media (max-width: 600px) {
-button, input, .header, .goto, .output, .weather {
+button, input, .header, .goto, .output {
   font-size: 12px;
   }
 .goToJoke, .setJoke, form {
   font-size: 10px;
+  margin: .1em;
   }
 .dad-carousel img {
   width: 40%;
   }
-
 }

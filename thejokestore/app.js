@@ -1,16 +1,17 @@
 $(() => {
+
 //dad-carousel
   let currentImg = 0;
-  let images = $('.dad-carousel').children().length -1;
+  let $images = $('.dad-carousel').children().length -1;
 
-//next dad click event
+//'next dad' click event
   $('.next').on('click', () => {
     $('.output').empty();
     $('.output2').empty();
     $('.output3').empty();
 
   $('.dad-carousel').children().eq(currentImg).css('display','none');
-  if (currentImg < images) {
+  if (currentImg < $images) {
     currentImg++;
   }
   else {
@@ -19,7 +20,7 @@ $(() => {
   $('.dad-carousel').children().eq(currentImg).css('display','block')
 
   });
-//previous dad click event
+//'previous dad' click event
   $('.previous').on('click', ()=>{
     $('.output').empty();
     $('.output2').empty();
@@ -29,7 +30,7 @@ $(() => {
     currentImg--;
   }
   else {
-    currentImg = images;
+    currentImg = $images;
   }
   $('.dad-carousel').children().eq(currentImg).css('display','block');
   })
@@ -62,7 +63,7 @@ $(document).on('hover', () => {
         },
         3000
       )
-      //create 'go-to' button
+  //create 'go-to' button
   $('<button>').addClass('setJoke').text('Set As \'Go-To\' Joke').prependTo('.output')
 
 //save 'go-to' joke to local storage with a click event
@@ -72,6 +73,7 @@ $('.setJoke').on('click', (event) => {
   localStorage.setItem('delivery', data.delivery)
   let $setup = localStorage.getItem('setup')
   let $delivery = localStorage.getItem('delivery')
+
 //display 'go-to' joke
 $('.goto').append(`Go-To Joke: ${$setup}---${$delivery}`).css('color','gold')
 })
@@ -111,8 +113,8 @@ $('form').on('submit', (event)=> {
       $('.form').trigger('reset');
       console.log(data)
 
-      //dad-phrases
-      const phrases = ['"Don\'t touch that thermostat, put on a sweater!"','"Great day for some yardwork! Might fire up the grill later..."','"It\'s not the heat that gets you, its the humidity!"']
+    //dad-phrases
+    const phrases = ['"Don\'t touch that thermostat, put on a sweater!"','"Great day for some yardwork! Might fire up the grill later..."','"It\'s not the heat that gets you, its the humidity!"']
 
       if (data.main.temp <= 55) {
         $('.output3').text(phrases[0]).css('color','gold')
