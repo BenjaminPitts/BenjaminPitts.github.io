@@ -2,7 +2,6 @@ $(() => {
 //dad-carousel
   let currentImg = 0;
   let images = $('.dad-carousel').children().length -1;
-  const names = ['Alan','Steve','Dave']
 
 //next dad click event
   $('.next').on('click', () => {
@@ -49,7 +48,7 @@ $(document).on('hover', () => {
     let $joke = $(event.target).attr('id');
 
   $.ajax({
-       url : `https://sv443.net/jokeapi/v2/joke/${$joke}`
+       url : `https://sv443.net/jokeapi/v2/joke/${$joke}?blacklistFlags=nsfw`
 
   }).then(
     (data)=> {
@@ -64,7 +63,7 @@ $(document).on('hover', () => {
         3000
       )
       //create 'go-to' button
-  $('<button>').addClass('setJoke').text('Set As \'Go-To\' Joke').prependTo('.output').css('font-size','12px')
+  $('<button>').addClass('setJoke').text('Set As \'Go-To\' Joke').prependTo('.output')
 
 //save 'go-to' joke to local storage with a click event
 $('.setJoke').on('click', (event) => {
@@ -74,8 +73,7 @@ $('.setJoke').on('click', (event) => {
   let $setup = localStorage.getItem('setup')
   let $delivery = localStorage.getItem('delivery')
 //display 'go-to' joke
-$('.goto').append(`Go-To Joke:${$setup}---${$delivery}`)
-.css('color','gold').css('font-style','italic')
+$('.goto').append(`Go-To Joke:${$setup}---${$delivery}`).css('color','gold')
 })
     },
     (error)=> {
