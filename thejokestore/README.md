@@ -7,5 +7,5 @@ an API to append jokes into an empty div when a button is clicked. I also
 created a button to save a 'go-to' joke in the local storage
 and retrieve the joke at any point in time, even if the browser is refreshed.
 Finally, I linked a 2nd API that uses the value of a form field to output several
-weather conditions. Some 'Dad phrases' are also displayed and are specific to 
+weather conditions. Some 'Dad phrases' are also displayed and are specific to the 
 current local temperature.

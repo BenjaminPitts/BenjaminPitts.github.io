@@ -73,7 +73,7 @@ $('.setJoke').on('click', (event) => {
   let $setup = localStorage.getItem('setup')
   let $delivery = localStorage.getItem('delivery')
 //display 'go-to' joke
-$('.goto').append(`Go-To Joke:${$setup}---${$delivery}`).css('color','gold')
+$('.goto').append(`Go-To Joke: ${$setup}---${$delivery}`).css('color','gold')
 })
     },
     (error)=> {
