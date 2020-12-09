@@ -40,13 +40,13 @@ $(document).on('hover', () => {
   $('[data-toggle=tooltip]').tooltip();
 });
 
-//api and joke delivery
+//joke delivery
   $('.buttons').on('click', (event) => {
     $('.output').empty();
     $('.output2').empty();
     $('.output3').empty();
 
-    let $joke = $(event.target).attr('id');
+  let $joke = $(event.target).attr('id');
 
   $.ajax({
        url : `https://sv443.net/jokeapi/v2/joke/${$joke}?blacklistFlags=nsfw`
@@ -56,12 +56,12 @@ $(document).on('hover', () => {
       const $setup = $('<h3>').text(data.setup)
       const $delivery = $('<h3>').text(data.delivery).css('color', 'gold')
       $('.output').append($setup)
-      //punchilne timer
+    //punchline timer
       setTimeout(
         ()=>{
           $('.output').append($delivery)
         },
-        3000
+        3500
       )
   //create 'go-to' button
   $('<button>').addClass('setJoke').text('Set As \'Go-To\' Joke').prependTo('.output')
@@ -75,13 +75,13 @@ $('.setJoke').on('click', (event) => {
   let $delivery = localStorage.getItem('delivery')
 
 //display 'go-to' joke
-$('.goto').append(`Go-To Joke: ${$setup}---${$delivery}`).css('color','gold')
-})
-    },
+  $('.goto').append(`Go-To Joke: ${$setup}---${$delivery}`).css('color','gold')
+  })
+}, //end of data function
     (error)=> {
       }
      )
-   })
+   }) //end of click event which holds the ajax joke functions
 
    //retrieve go-to joke from local storage with a click event
    $('.goToJoke').on('click', (event) => {
@@ -126,8 +126,8 @@ $('form').on('submit', (event)=> {
     },
     (error)=>{
     }
-  )
+  ) 
 
-})
+}) //end of click event that holds ajax weather functions
 
 }) //ending token
