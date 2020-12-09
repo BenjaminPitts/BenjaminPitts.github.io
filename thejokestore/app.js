@@ -126,7 +126,7 @@ $('form').on('submit', (event)=> {
     },
     (error)=>{
     }
-  ) 
+  )
 
 }) //end of click event that holds ajax weather functions
 
