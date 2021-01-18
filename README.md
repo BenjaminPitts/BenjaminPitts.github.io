@@ -1,5 +1,5 @@
 This is my personal portfolio to showcase applications that I made using the following languages and frameworks. <br>
-Front End: HTML, CSS, JavaScript, jQuery, React
+Front End: HTML, CSS, JavaScript, jQuery, React <br>
 Back End: Node, Express, MongoDB, Mongoose <br><br>
 
 -[The Joke Store](https://benjaminpitts.github.io/thejokestore/) <br>
