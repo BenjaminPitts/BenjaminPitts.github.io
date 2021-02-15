@@ -1,6 +1,6 @@
 This is my repo for hosting sites on GitHub Pages. Below are live links to all of my
-current applications that I made using the following languages: <br>
-Front End: HTML, CSS, JavaScript, jQuery, React, Ruby, PHP <br>
+current applications that I made using the following languages: <br><br>
+Front End: HTML, CSS, JavaScript, jQuery, React, Ruby, PHP <br><br>
 Back End/Frameworks: Node, Express, Rails, Laravel, Mongoose, MongoDB, PostgreSQL
 <br><br>
 
