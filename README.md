@@ -16,4 +16,4 @@ Back End/Frameworks: Node, Express, Ruby, Rails, Laravel, PHP, MongoDB, PostgreS
 || [GitHub Repository](https://github.com/BenjaminPitts/gearswap)<br>
 -[Itinerary <i>(collaboration with UX/UI team)</i>](https://disney-itinerary.herokuapp.com/)
 || [GitHub Repository](https://github.com/BenjaminPitts/mern-itinerary)<br><br>
--[Bio and Current Resume](https://benjaminjackpitts.wordpress.com/) <br>
+-[Bio and Current Resume](https://benjaminjackpitts.com/) <br>
