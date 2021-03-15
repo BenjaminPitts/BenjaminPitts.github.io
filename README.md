@@ -10,7 +10,7 @@ Back End/Frameworks: Node, Express, Ruby, Rails, Laravel, PHP, MongoDB, PostgreS
 || [GitHub Repository](https://github.com/BenjaminPitts/recordstore)<br>
 -[The Joke Store](https://benjaminpitts.github.io/thejokestore/)
 || [GitHub Repository](https://github.com/BenjaminPitts/BenjaminPitts.github.io/tree/main/thejokestore)<br>
--[Quiz.js (collaboration project)](https://react-quiz-js.herokuapp.com/)
+-[Quiz.js <i>(collaboration project)</i>](https://react-quiz-js.herokuapp.com/)
 || [GitHub Repository](https://github.com/BenjaminPitts/quiz.js)<br>
 -[Gear Swap (collaboration project)](https://gearswap.herokuapp.com/)
 || [GitHub Repository](https://github.com/BenjaminPitts/gearswap)<br>
