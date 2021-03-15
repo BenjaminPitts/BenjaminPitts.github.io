@@ -4,9 +4,16 @@ Front End: HTML, CSS, JavaScript, jQuery, React <br><br>
 Back End/Frameworks: Node, Express, Ruby, Rails, Laravel, PHP, MongoDB, PostgreSQL
 <br><br>
 
--[Triple J Painting Company](https://triplejpainting.herokuapp.com/) <br>
--[Counter Culture Records](https://recordstore666.herokuapp.com/recordstore) <br>
--[The Joke Store](https://benjaminpitts.github.io/thejokestore/) <br>
--[Quiz.js (collaboration project)](https://react-quiz-js.herokuapp.com/)<br>
--[Gear Swap (collaboration project)](https://gearswap.herokuapp.com/) <br><br>
+-[Triple J Painting Company](https://triplejpainting.herokuapp.com/)
+//[GitHub Repository](https://github.com/BenjaminPitts/TripleJ) <br>
+-[Counter Culture Records](https://recordstore666.herokuapp.com/recordstore)
+//[GitHub Repository](https://github.com/BenjaminPitts/recordstore)<br>
+-[The Joke Store](https://benjaminpitts.github.io/thejokestore/)
+//[GitHub Repository](https://github.com/BenjaminPitts/BenjaminPitts.github.io/tree/main/thejokestore)<br>
+-[Quiz.js (collaboration project)](https://react-quiz-js.herokuapp.com/)
+//[GitHub Repository](https://github.com/BenjaminPitts/quiz.js)<br>
+-[Gear Swap (collaboration project)](https://gearswap.herokuapp.com/)
+//[GitHub Repository](https://github.com/BenjaminPitts/gearswap)<br>
+-[Itinerary (collaboration with UX/UI team)](https://disney-itinerary.herokuapp.com/)
+//[GitHub Repository](https://github.com/BenjaminPitts/mern-itinerary)<br><br>
 -[Bio and Current Resume](https://benjaminjackpitts.wordpress.com/) <br>
