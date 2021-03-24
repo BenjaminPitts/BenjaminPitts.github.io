@@ -13,8 +13,8 @@ Back End/Frameworks: Node, Express, Ruby, Rails, PHP, Laravel, Java, Spring, Mon
 || [GitHub](https://github.com/BenjaminPitts/BenjaminPitts.github.io/tree/main/thejokestore) || HTML, CSS, jQuery, Axios<br>
 -[Quiz.js <i>(collaboration project)</i>](https://react-quiz-js.herokuapp.com/)
 || [GitHub](https://github.com/BenjaminPitts/quiz.js) || PHP/Laravel, React, PostgreSQL<br>
--[Gear Swap <i>(collaboration project)</i>](https://gearswap.herokuapp.com/)
+-[Gear Swap <i>(collaboration)</i>](https://gearswap.herokuapp.com/)
 || [GitHub](https://github.com/BenjaminPitts/gearswap) || Node/Express, React, MongoDB<br>
 -[Itinerary <i>(collab with UX/UI team)</i>](https://disney-itinerary.herokuapp.com/)
-|| [GitHub](https://github.com/BenjaminPitts/mern-itinerary) Node/Express, React, MongoDB<br><br>
--[Bio and Current Resume](https://benjaminjackpitts.com/) || WordPress<br>
+|| [GitHub](https://github.com/BenjaminPitts/mern-itinerary) || Node/Express, React, MongoDB<br><br>
+-[Portfolio](https://benjaminjackpitts.com/) || WordPress<br>
