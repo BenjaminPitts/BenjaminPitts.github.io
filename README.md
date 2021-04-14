@@ -1,7 +1,7 @@
 This is my repository for hosting sites on GitHub Pages. Below are live links to all of my
 current applications that I made using the following languages: <br><br>
 Front End: HTML, CSS, JavaScript, jQuery, React <br><br>
-Back End/Frameworks: Node, Express, Ruby, Rails, PHP, Laravel, Java, Spring, MongoDB, PostgreSQL
+Back End/Frameworks: Node, Express, Ruby, Rails, PHP, Laravel, Java, Spring, Python, Django, MongoDB, PostgreSQL
 <br><br>
 -[Triple J Painting Company](https://triplejpainting.herokuapp.com/)
 || [GitHub](https://github.com/BenjaminPitts/TripleJ) || PHP/Laravel, React, PostgreSQL <br>
