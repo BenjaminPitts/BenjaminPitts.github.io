@@ -3,7 +3,7 @@ current applications that I made using the following languages: <br><br>
 Front End: HTML, CSS, JavaScript, jQuery, React <br><br>
 Back End/Frameworks: Node, Express, Ruby, Rails, PHP, Laravel, Java, Spring, Python, Django, MongoDB, PostgreSQL
 <br><br>
--[Triple J Painting Company](https://triplejpaintingcompany.com/)
+-[Triple J Painting Company](triplejpaintingcompany.com/)
 || [GitHub](https://github.com/BenjaminPitts/TripleJ) || PHP/Laravel, React, PostgreSQL <br>
 -[Counter Culture Records](https://recordstore666.herokuapp.com/recordstore)
 || [GitHub](https://github.com/BenjaminPitts/recordstore) || Node/Express, EJS, MongoDB<br>
